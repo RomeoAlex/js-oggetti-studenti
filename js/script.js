@@ -40,13 +40,25 @@ const arrayStudenti = [
         eta:'19',
     }
 ];
-for(let i = 0; i <arrayStudenti.length; i++){
-    const thisClass = arrayStudenti[i];
-    // Dot Notation
-    console.log(thisClass.nome);
-    console.log(thisClass.cognome);
-    // Bracket notaion
-    // console.log([nome]);
-    // console.log([cognome]);
-}
-// 
+// for(let i = 0; i <arrayStudenti.length; i++){
+//     const thisClass = arrayStudenti[i];
+//     // Dot Notation
+//     console.log(thisClass.nome);
+//     console.log(thisClass.cognome);
+//     // Bracket notaion
+//     // console.log([nome]);
+//     // console.log([cognome]);
+// }
+// 4 - Iserisco una voce con il prompt
+const nameRequest = prompt('immetti un nome');
+// for(let i = 0; i <arrayStudenti.length; i++){
+//     const thisClass = arrayStudenti[i];
+//     // Dot Notation
+//     console.log(thisClass.nome);
+//     console.log(thisClass.cognome);
+//     // Bracket notaion
+//     // console.log([nome]);
+//     // console.log([cognome]);
+// }
+const addArray = arrayStudenti.push(nameRequest);
+console.log(arrayStudenti);
