@@ -12,6 +12,7 @@ const studente = {
 };
 // console per verifica
 // console.log(studente);
+// console.log(key + ': ' + student[key]);
 // 2 - Stampo il ciclo con le propietà e i contenuti
 // for (let key in studente){
 //     console.log(key,studente[key]);
@@ -50,15 +51,26 @@ const arrayStudenti = [
 //     // console.log([cognome]);
 // }
 // 4 - Iserisco una voce con il prompt
+
+
+// METODO 1
 const nameRequest = prompt('immetti un nome');
-// for(let i = 0; i <arrayStudenti.length; i++){
-//     const thisClass = arrayStudenti[i];
-//     // Dot Notation
-//     console.log(thisClass.nome);
-//     console.log(thisClass.cognome);
-//     // Bracket notaion
-//     // console.log([nome]);
-//     // console.log([cognome]);
-// }
-const addArray = arrayStudenti.push(nameRequest);
+const userLastname = prompt('qual\'è il tuo cognome?');
+const userAge = prompt('qual\'è la tua eta');
+const newStudent = {
+    nome = nameRequest,
+    cognome = userLastname,
+    eta = userAge 
+};
+arrayStudenti.push(newStudent);
 console.log(arrayStudenti);
+// NON SERVE IL CICLO FOR
+// METODO 2
+
+
+arrayStudenti.push({ 
+    nome: nameRequest, 
+    cognome: userLastname, 
+    eta: userAge });
+    console.log(arrayStudenti);
+
